@@ -9,7 +9,7 @@ var aumento;
 
 importe = parseInt(document.getElementById("sueldo").value);
 
-aumento = importe * 1,1;
+aumento = importe * 1.1;
 
 document.getElementById("resultado").value = aumento;
 

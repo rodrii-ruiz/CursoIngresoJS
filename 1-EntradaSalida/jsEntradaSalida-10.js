@@ -6,9 +6,9 @@ function mostrarAumento()
 {var importe;
     var descuento;
 
-    importe = parseInt(document.getElementById("importe").value);
+    importe = parseFloat(document.getElementById("importe").value);
 
-    descuento = importe * 0,75;
+    descuento = importe * 0.75;
 
     document.getElementById("resultado").value = descuento;
 
