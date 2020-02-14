@@ -1,7 +1,6 @@
 function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
-	var numero
-	numero = parseInt(document.getElementById("FormIngreso").value);
 
+	alert(Math.round(Math.random()*10)); 
 }//FIN DE LA FUNCIÓN
