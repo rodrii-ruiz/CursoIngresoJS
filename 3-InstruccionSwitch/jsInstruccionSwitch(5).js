@@ -1,25 +1,15 @@
-function mostrar()
-{
+function mostrar(){
 //tomo la edad  
-var hora = parseInt(document.getElementById("hora").value);
+    var laHora = parseInt(document.getElementById('hora').value);
 
 //alert (laHora);
-	switch( hora){
-
+	switch(laHora){
         case 7:
         case 8:
         case 9:
         case 10:
         case 11:
-            alert("Es de mañana");
+            alert("Es de la maniana");
             break;
-
-
-
-        
     }
-	
-
-
-
 }//FIN DE LA FUNCIÓN
