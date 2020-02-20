@@ -6,16 +6,39 @@ mostrara el texto de un color entre los 6 posibles
 */
 var ColorSecreto;
 var tiempoInicio;
-function comenzar()
-{
+var startTime;
+var stopTime;
+function comenzar(){    
+    startTime = new Date();
+    let random = Math.round(Math.random()*5);
+    console.log(random);
+    switch (random){
+        case 0:
+            ColorSecreto = "azul";
+        break;
+        case 1:
+            ColorSecreto = "amarillo";
+        break;
+        case 2:
+            ColorSecreto = "marron";
+        break;
+        case 3:
+            ColorSecreto = "verde";
+        break;
+        case 4:
+            ColorSecreto = "celeste";
+        break;
+        case 5:
+            ColorSecreto = "rojo";
+        break;
+    }
+    console.log(ColorSecreto);
+    document.getElementById("ColorElejido").value = ColorSecreto;
+}
 
-	
-
-}//FIN DE LA FUNCIÓN
-function Responder(colorParametro)
-{
-	
-	
-
-
-}//FIN DE LA FUNCIÓN
+function Responder(colorParametro){
+	if(colorParametro == ColorSecreto){
+        stopTime = new Date();
+        alert("Tiempo: " + Math.round((stopTime-startTime)*0.001) + " segundo/s.");
+    }
+}
